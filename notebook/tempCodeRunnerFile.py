@@ -1,0 +1,7 @@
+import sentence_transformers
+import transformers
+import huggingface_hub
+
+print(sentence_transformers.__version__)
+print(transformers.__version__)
+print(huggingface_hub.__version__)

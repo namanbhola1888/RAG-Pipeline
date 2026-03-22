@@ -1,0 +1,52 @@
+
+Introduction to Machine Learning
+
+Machine Learning is a subfield of artificial intelligence that focuses on building systems that can learn from data and improve their performance without being explicitly programmed for every task.
+
+Instead of writing rule-based logic, machine learning algorithms identify patterns in data and make predictions or decisions based on those patterns.
+
+Types of Machine Learning:
+
+1. Supervised Learning
+   In supervised learning, the model is trained using labeled data.
+   Examples:
+   - Classification (Spam detection, Image recognition)
+   - Regression (House price prediction)
+
+2. Unsupervised Learning
+   In unsupervised learning, the model works with unlabeled data.
+   Examples:
+   - Clustering (Customer segmentation)
+   - Dimensionality reduction
+
+3. Reinforcement Learning
+   In reinforcement learning, an agent learns by interacting with an environment and receiving rewards or penalties.
+
+Basic Machine Learning Workflow:
+
+1. Data Collection
+2. Data Cleaning and Preprocessing
+3. Feature Engineering
+4. Model Selection
+5. Training the Model
+6. Model Evaluation
+7. Deployment
+
+Example Concepts:
+
+- Dataset: A structured collection of data.
+- Feature: An input variable used for prediction.
+- Label: The output variable.
+- Model: A mathematical representation learned from data.
+- Overfitting: When a model performs well on training data but poorly on unseen data.
+
+Applications of Machine Learning:
+
+- Recommendation systems
+- Fraud detection
+- Natural language processing
+- Autonomous vehicles
+- Medical diagnosis
+- Cybersecurity threat detection
+
+Machine learning is widely used in modern software systems because it enables automation, personalization, and intelligent decision-making at scale.
