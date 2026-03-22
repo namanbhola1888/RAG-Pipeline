@@ -55,4 +55,3 @@ dir_loader = DirectoryLoader(
 
 documents_pdf = dir_loader.load()
 # print(documents_pdf)
-

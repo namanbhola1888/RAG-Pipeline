@@ -5,6 +5,21 @@ from chromadb.config import Settings
 import uuid
 from typing import List, Dict, Any, Tuple
 from sklearn.metrics.pairwise import cosine_similarity
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(BASE_DIR)
+
+MODEL_PATH = os.path.join(
+    PROJECT_ROOT,
+    "models",
+    "models",
+    "all-MiniLM-L6-v2"
+)
+
+
+# print("MODEL PATH:", MODEL_PATH)
+# print("EXISTS:", os.path.exists(MODEL_PATH))
 
 class EmbeddingManager:
     """Handles document embedding generation using SentenceTransformer"""
@@ -26,7 +41,7 @@ class EmbeddingManager:
             print(f"Loading embedding model: {self.model_name}")
 
             self.model = SentenceTransformer(
-                "C:\\Users\\Admin\\OneDrive\\Projects\\RAG Pipeline\\models\\models\\all-MiniLM-L6-v2"
+                MODEL_PATH
             )
 
             print(
@@ -54,6 +69,7 @@ class EmbeddingManager:
         print(f"Generating embeddings for {len(texts)} texts...")
         embeddings = self.model.encode(texts, show_progress_bar=True)
         print(f"Generated embeddings with shape: {embeddings.shape}")
+        
         return embeddings
 
 
