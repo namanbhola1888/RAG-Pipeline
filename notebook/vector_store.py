@@ -87,8 +87,6 @@ class VectorStore:
                 documents=documents_text
             )
 
-            self.client.persist()  
-
             print(f"Successfully added {len(documents)} documents to vector store")
             print(f"Total documents in collection: {self.collection.count()}")
             
@@ -108,9 +106,6 @@ chunks = split_documents(documents_pdf)
 embeddings = embedding_manager.generate_embeddings(
     [doc.page_content for doc in chunks]
 )
-
-print(len(chunks))
-print(len(embeddings))
 
 # Step 3: store
 vector_store.add_documents(chunks, embeddings)
