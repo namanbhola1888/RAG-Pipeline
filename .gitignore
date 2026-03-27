@@ -11,3 +11,5 @@ wheels/
 
 # Chroma vector store (generated data)
 data/vector_store/
+
+.env
